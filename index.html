@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles/style.css">
   <title>Frontend Mentor | Expenses chart component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,28 +16,80 @@
 </head>
 <body>
 
-  My balance
-  $921.48
+  <main>
+    <div class="balance-container">
+      <div class="balance-text">
+        <p>My balance</p>
+        <h1>$921.48</h1>
+      </div>
+      <img src="images/logo.svg" alt="company_logo">
+    </div>
 
-  Spending - Last 7 days
+    <div class="info-container">
+      <div class="info-label-container">
+        <h1>Spending - Last 7 days</h1>
+      </div>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+      <span class="info-graph-container">
+        
+        <div class="bar-container">
+          <div class="bar-display-value"></div>
+          <div class="bar" id="0"></div>
+          <p>mon</p>
+        </div>
 
-  Total this month
-  $478.33
+        <div class="bar-container">
+          <div class="bar-display-value"></div>
+          <div class="bar" id="1"></div>
+          <p>tues</p>
+        </div>
 
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class="bar-container">
+          <div class="bar-display-value"></div>
+          <div class="bar" id="2"></div>
+          <p>wed</p>
+        </div>
+
+        <div class="bar-container">
+          <div class="bar-display-value"></div>
+          <div class="bar" id="3"></div>
+          <p>thurs</p>
+        </div>
+
+        <div class="bar-container">
+          <div class="bar-display-value"></div>
+          <div class="bar" id="4"></div>
+          <p>fri</p>
+        </div>
+
+        <div class="bar-container">
+          <div class="bar-display-value"></div>
+          <div class="bar" id="5"></div>
+          <p>sat</p>
+        </div>
+
+        <div class="bar-container">
+          <div class="bar-display-value"></div>
+          <div class="bar" id="6"></div>
+          <p>sun</p>
+        </div>
+
+      </span>
+
+      <div class="total-container">
+        <div class="total-this-month-container">
+          <p class="label">Total this month</p>
+          <h1 class="price">$478.33</h1>
+        </div>
+        <div class="total-last-month-container">
+          <p class="percentage">+2.4%</p>
+          <p class="label">From last month</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+<script src="javascript.js"></script>
 </body>
 </html>
